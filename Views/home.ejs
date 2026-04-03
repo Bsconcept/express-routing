@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - My Express App</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">MyExpressApp</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link <%= currentPage === 'home' ? 'active' : '' %>">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/services" class="nav-link <%= currentPage === 'services' ? 'active' : '' %>">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link <%= currentPage === 'contact' ? 'active' : '' %>">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="hero">
+      <h1>Welcome to Our Website</h1>
+      <p>Your trusted partner in digital solutions</p>
+    </div>
+
+    <section class="content">
+      <div class="info-card">
+        <h2>About Us</h2>
+        <p>We are a leading technology company dedicated to providing innovative solutions for businesses worldwide. With years of experience and a team of expert professionals, we deliver excellence in every project.</p>
+        <p>Our mission is to help businesses thrive in the digital age through cutting-edge technology and exceptional service.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <h3>Innovation</h3>
+          <p>Cutting-edge solutions tailored to your needs</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💪</div>
+          <h3>Reliability</h3>
+          <p>99.9% uptime guaranteed</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>Support</h3>
+          <p>24/7 customer support</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyExpressApp. All rights reserved.</p>
+  </footer>
+</body>
+</html>
